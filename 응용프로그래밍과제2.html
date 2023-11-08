@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset style="width: 450px;">
+            <legend>주문하기</legend>
+                <b>주문 할 상품을 선택해주세요.</b><br><br>
+                <label><input type="checkbox" value="cldir">치약선물세트</label>
+                <input type="number"min="0"max="5">개 (최대5개)<br>
+                <label><input type="checkbox" value="rhkdlf">과일선물세트</label>
+                <input type="number"min="0"max="10"step="2">개 (2개 1세트,최대 10개)<br>
+                <b>포장 선택</b><br><br>
+                <label><input type="radio" name="vhwkd"> 보자기 포장</label>
+                <label><input type="radio" name="vhwkd">보자기 포장 안함</label>
+
+
+        </fieldset>
+        <fieldset style="width: 450px;">
+            <legend>배송 정보</legend>
+            <ul>
+                <li><label>이름 <input type="text" placeholder="공백 없이 입력하세요"></label></li>
+                <li><label>연락처 <input type="tel" placeholder="-를 빼고 입력하세요"></label></li>
+                <li><label>이메일 <input type="text"> @</label><select id="local">
+                    <option value="gm">gmail.com</option>
+                    <option value="nv">naver.com</option>
+                    <option value="ka">chol.com</option>
+                    <option value="fa">daum.com</option>
+                </select></li>
+                <li><label for="butt">박스 디자인 이미지</label>
+                    <label><button>파일 선택</button>선택된 파일 없음</label>
+                </li>
+                <li><label>희망 배송일 <input type="date" min="2023-09-01" max="2023-09-10"></label></li>
+                <li>배송 메세지<br><label for="memo"></label>
+                    <textarea id="memo" cols="50" rows="3"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <button type="submit">제출하기</button>
+        <button type="reset">다시 작성</button>
+    </form>
+</body>
+</html>
